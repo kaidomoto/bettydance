@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  color: #2d3748;
+}
+
+h1, h2, h3 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  color: #4a5568;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #805ad5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: #805ad5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #6b46c1;
+}
+
+input, select {
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+table {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(128, 90, 213, 0.05);
+  margin-top: 16px;
+}
+
+th, td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background: rgba(237, 242, 247, 0.8);
+  color: #4a5568;
+  font-weight: 700;
+} 
