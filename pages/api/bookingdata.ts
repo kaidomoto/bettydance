@@ -1,17 +1,20 @@
 import { google } from 'googleapis';
 import { NextApiRequest, NextApiResponse } from 'next';
-import path from 'path';
-import fs from 'fs';
 
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
 const SHEET_ID = process.env.GOOGLE_SHEET_ID as string;
 
-// 读取 Service Account 密钥
-const keyFile = path.join(process.cwd(), 'google-service-account.json');
-const credentials = JSON.parse(fs.readFileSync(keyFile, 'utf8'));
+// 从环境变量读取 Service Account 密钥
+const getGoogleCredentials = () => {
+  const serviceAccount = process.env.GOOGLE_SERVICE_ACCOUNT_KEY;
+  if (!serviceAccount) {
+    throw new Error('GOOGLE_SERVICE_ACCOUNT_KEY environment variable is not set');
+  }
+  return JSON.parse(serviceAccount);
+};
 
 const auth = new google.auth.GoogleAuth({
-  credentials,
+  credentials: getGoogleCredentials(),
   scopes: SCOPES,
 });
 

@@ -54,7 +54,7 @@ const BookingList: React.FC<Props> = ({ role, refreshKey }) => {
         setUserNickname(nicknames[nicknames.length - 1]);
       }
     }
-  }, []);
+  }, [refreshKey]); // 添加refreshKey依赖，每次刷新时重新读取userNickname
 
   useEffect(() => {
     const fetchBookings = async () => {
