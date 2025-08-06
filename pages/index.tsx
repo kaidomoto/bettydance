@@ -261,6 +261,24 @@ export default function Home() {
           backdropFilter: 'blur(10px)'
         }}>
           <BookingList role={role} refreshKey={refreshKey} />
+          
+          {/* 条款同意声明 */}
+          <div style={{
+            marginTop: '24px',
+            paddingTop: '20px',
+            borderTop: '1px solid rgba(128, 90, 213, 0.15)',
+            textAlign: 'center'
+          }}>
+            <p style={{
+              color: '#718096',
+              fontSize: '0.85rem',
+              lineHeight: '1.5',
+              margin: 0,
+              fontStyle: 'italic'
+            }}>
+              ℹ️ {t('terms_agreement')}
+            </p>
+          </div>
         </div>
       </div>
 

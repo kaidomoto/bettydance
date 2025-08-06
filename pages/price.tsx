@@ -572,6 +572,43 @@ export default function Price() {
                <span>{t('contact_for_questions')}</span>
              </li>
           </ul>
+          
+          {/* 取消政策声明 */}
+          <div style={{
+            marginTop: '24px',
+            paddingTop: '20px',
+            borderTop: '1px solid rgba(128, 90, 213, 0.2)'
+          }}>
+            <h4 style={{
+              color: '#805ad5',
+              fontSize: '1.1rem',
+              fontWeight: '600',
+              marginBottom: '12px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}>
+              <span>📅</span>
+              {t('cancellation_policy_title')}
+            </h4>
+            <ul style={{
+              listStyle: 'none',
+              padding: 0,
+              margin: 0,
+              color: '#4a5568',
+              fontSize: '0.9rem',
+              lineHeight: '1.6'
+            }}>
+              <li style={{ marginBottom: '8px', display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                <span style={{ color: '#805ad5' }}>•</span>
+                <span>{t('cancellation_policy_advance')}</span>
+              </li>
+              <li style={{ marginBottom: '8px', display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                <span style={{ color: '#805ad5' }}>•</span>
+                <span>{t('cancellation_policy_late')}</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
       </div>

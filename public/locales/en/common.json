@@ -79,7 +79,7 @@
     "physical_practice_desc": "Release stress and maintain physical and mental health through dance",
     "safe_space": "Safe Space",
     "safe_space_desc": "Pressure-free, judgment-free practice environment",
-    "like_dancing": "Like dancing, exploring self-expression and body control, fan culture",
+    "like_dancing": "Like dancing, or want to try dancing, explore self-expression and body control, want to become cooler and more confident",
     "want_exercise_social": "Not necessarily want to 'learn to dance well', but want to exercise or socialize",
     "expand_possibilities": "Want to expand self-possibilities, willing to share own content",
     "multilingual_users": "Chinese/Japanese/English users",
@@ -112,5 +112,13 @@
     "class_location": "Location", 
     "total_bookings": "Total Bookings",
     "no_upcoming_classes": "No upcoming classes scheduled",
-    "cash": "Cash"
+    "cash": "Cash",
+    "video_policy_title": "Class Recording Policy",
+    "video_policy_personal": "Personal recording during class is the individual behavior of participants. If you prefer not to be recorded, please communicate directly with other participants.",
+    "video_policy_commercial": "Any videos recorded in class are strictly prohibited from commercial use.",
+    "video_policy_official": "Organizers may record videos for homepage promotion. Students who are uncomfortable or unwilling to participate in recording can completely opt out without any psychological burden.",
+    "cancellation_policy_title": "Cancellation Policy",
+    "cancellation_policy_advance": "Due to our post-payment system and studio rental costs, we generally request cancellations at least 3 days in advance.",
+    "cancellation_policy_late": "For cancellations within 3 days, depending on circumstances (such as multiple simultaneous cancellations), partial fees may be charged to cover venue costs.",
+    "terms_agreement": "By booking or canceling classes, you acknowledge that you have read and agree to comply with the relevant policies and terms outlined in our About and Price pages."
 }

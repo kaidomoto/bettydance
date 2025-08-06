@@ -303,6 +303,47 @@ export default function About() {
               <span>{t('multilingual_environment')}</span>
             </li>
           </ul>
+          
+          {/* 拍摄政策声明 */}
+          <div style={{
+            marginTop: '24px',
+            paddingTop: '20px',
+            borderTop: '1px solid rgba(128, 90, 213, 0.2)'
+          }}>
+            <h4 style={{
+              color: '#805ad5',
+              fontSize: '1.1rem',
+              fontWeight: '600',
+              marginBottom: '12px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}>
+              <span>📹</span>
+              {t('video_policy_title')}
+            </h4>
+            <ul style={{
+              listStyle: 'none',
+              padding: 0,
+              margin: 0,
+              color: '#4a5568',
+              fontSize: '0.9rem',
+              lineHeight: '1.6'
+            }}>
+              <li style={{ marginBottom: '8px', display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                <span style={{ color: '#805ad5' }}>•</span>
+                <span>{t('video_policy_personal')}</span>
+              </li>
+              <li style={{ marginBottom: '8px', display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                <span style={{ color: '#805ad5' }}>•</span>
+                <span>{t('video_policy_commercial')}</span>
+              </li>
+              <li style={{ marginBottom: '8px', display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                <span style={{ color: '#805ad5' }}>•</span>
+                <span>{t('video_policy_official')}</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* 联系信息 */}

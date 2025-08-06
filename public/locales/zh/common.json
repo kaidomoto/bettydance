@@ -112,5 +112,13 @@
   "class_location": "地点",
   "total_bookings": "预约人数",
   "no_upcoming_classes": "暂无安排的课程",
-  "cash": "现金"
+  "cash": "现金",
+  "video_policy_title": "课堂拍摄声明",
+  "video_policy_personal": "课堂上的个人拍摄行为属于参与者个人行为，如不愿被拍到请与其他参与者自行协商。",
+  "video_policy_commercial": "任何课堂拍摄的视频严禁用于商业用途。",
+  "video_policy_official": "组织方可能会拍摄视频用于主页宣传，如不便或不愿参与拍摄的学员完全可以不参加拍摄，无须有任何心理负担。",
+  "cancellation_policy_title": "取消政策",
+  "cancellation_policy_advance": "由于采用课后付费制且需要承担舞房租赁成本，一般情况下请提前三天取消预约。",
+  "cancellation_policy_late": "如在三天内取消预约，视具体情况（如多人同时取消）可能需要支付部分费用以覆盖场地成本。",
+  "terms_agreement": "如您预约或取消课程，将视作您已阅读并同意遵守我们在关于页面和价格页面中列明的相关政策与条款。"
 }

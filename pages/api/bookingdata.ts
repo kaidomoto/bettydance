@@ -1,16 +1,26 @@
 import { google } from 'googleapis';
 import { NextApiRequest, NextApiResponse } from 'next';
+import path from 'path';
+import fs from 'fs';
 
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
 const SHEET_ID = process.env.GOOGLE_SHEET_ID as string;
 
-// 从环境变量读取 Service Account 密钥
+// 兼容本地和部署环境的 Service Account 密钥获取
 const getGoogleCredentials = () => {
-  const serviceAccount = process.env.GOOGLE_SERVICE_ACCOUNT_KEY;
-  if (!serviceAccount) {
-    throw new Error('GOOGLE_SERVICE_ACCOUNT_KEY environment variable is not set');
+  // 优先使用环境变量（部署环境）
+  const serviceAccountEnv = process.env.GOOGLE_SERVICE_ACCOUNT_KEY;
+  if (serviceAccountEnv) {
+    return JSON.parse(serviceAccountEnv);
   }
-  return JSON.parse(serviceAccount);
+  
+  // 回退到文件方式（本地开发）
+  try {
+    const keyFile = path.join(process.cwd(), 'google-service-account.json');
+    return JSON.parse(fs.readFileSync(keyFile, 'utf8'));
+  } catch (error) {
+    throw new Error('Neither GOOGLE_SERVICE_ACCOUNT_KEY environment variable nor google-service-account.json file found');
+  }
 };
 
 const auth = new google.auth.GoogleAuth({
